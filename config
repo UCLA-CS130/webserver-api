@@ -1,1 +1,6 @@
-# Example config file
+port 2020;
+path / StaticHandler {
+	root /foo/bar;
+}
+path /echo EchoHandler {
+}
