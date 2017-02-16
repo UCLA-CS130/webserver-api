@@ -1,6 +1,12 @@
-port 2020;
+# This is a comment.
+
+port 2020;  # This is also a comment.
+
 path / StaticHandler {
-	root /foo/bar;
+  root /foo/bar;
 }
-path /echo EchoHandler {
-}
+
+path /echo EchoHandler {}
+
+# Default response handler if no handlers match.
+default NotFoundHandler {}
