@@ -53,7 +53,8 @@ class RequestHandler {
     // Define your status codes here.
   };
   
-  // Initializes the handler. Returns true if successful.
+  // Initializes the handler. Returns a response code indicating success or
+  // failure condition.
   // uri_prefix is the value in the config file that this handler will run for.
   // config is the contents of the child block for this handler ONLY.
   virtual Status Init(const std::string& uri_prefix,
